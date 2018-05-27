@@ -3,12 +3,12 @@ package com.heniart.ratingservice.domain;
 public class Rating {
     private Long id;
     private Long bookId;
-    private int starts;
+    private int stars;
 
-    public Rating(Long id, Long bookId, int starts) {
+    public Rating(Long id, Long bookId, int stars) {
         this.id = id;
         this.bookId = bookId;
-        this.starts = starts;
+        this.stars = stars;
     }
 
     public Long getId() {
@@ -27,12 +27,12 @@ public class Rating {
         this.bookId = bookId;
     }
 
-    public int getStarts() {
-        return starts;
+    public int getStars() {
+        return stars;
     }
 
-    public void setStarts(int starts) {
-        this.starts = starts;
+    public void setStars(int stars) {
+        this.stars = stars;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Rating {
         return "Rating{" +
                 "id=" + id +
                 ", bookId=" + bookId +
-                ", starts=" + starts +
+                ", stars=" + stars +
                 '}';
     }
 }
